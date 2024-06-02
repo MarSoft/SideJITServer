@@ -250,5 +250,5 @@ def start_server(verbose, timeout, port, debug, pair, version, tunnel):
 
     refresh_devs()
 
-    create_service()
+    create_service(port=port)
     app.run(host='0.0.0.0', port=port, debug=debug)
